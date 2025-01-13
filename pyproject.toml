@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "strongbonesdash"
+version = "0.1.0"
+description = "For visualization of STRONG BONES enrollment and data availability"
+authors = ["jrstapl <joshrstapleton@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
