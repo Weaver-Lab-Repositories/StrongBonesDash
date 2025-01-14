@@ -2,6 +2,7 @@ from shiny import ui, render, App
 from shinywidgets import render_widget
 import pandas as pd
 import ipython
+import plotly
 import plotly.express as px
 
 import numpy as np
@@ -23,6 +24,8 @@ def server(input, output, session):
     @output
     @render.plot
     def histogram():
+        
+
         x = 100 + np.random.randn(500)
         plt.title("A histogram", size=20)
         plt.hist(x=x, bins=input.slider(), color="grey", ec="black")
